@@ -55,7 +55,7 @@ func warning(format string, v ...interface{}) {
 	fmt.Fprintf(os.Stderr, format, v...)
 }
 
-func main() {
+func NewDefaultHelmCommand() {
 	// Setting the name of the app for managedFields in the Kubernetes client.
 	// It is set here to the full name of "helm" so that renaming of helm to
 	// another name (e.g., helm2 or helm3) does not change the name of the
